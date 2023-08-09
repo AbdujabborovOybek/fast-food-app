@@ -1,0 +1,37 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -120%;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #3333;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar_header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.sidebar_header h1 {
+  color: #fff;
+  font-size: 28px;
+}
+
+.sidebar_header > button {
+  padding: 4px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}

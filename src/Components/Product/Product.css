@@ -1,0 +1,38 @@
+.product {
+  width: calc(100% / 4 - 25px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #fff;
+  padding: 5px 10px 15px;
+  border: 5px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  border-color: green;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.product > img {
+  width: 100%;
+}
+
+.product > h1 {
+  font-size: 16px;
+  text-align: start;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.product span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}

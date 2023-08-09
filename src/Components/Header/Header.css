@@ -1,0 +1,56 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* ==== navbar_left ==== */
+
+.navbar_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar_left > button,
+.navbar_right > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar_left > h2 {
+  color: #fff;
+  font-size: 22px;
+}
+
+/* ==== navbar_right ==== */
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search_product {
+  width: 90px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  padding: 0 10px;
+}
+.search_product.active {
+  width: 350px;
+  padding: 0 15px;
+}

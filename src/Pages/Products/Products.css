@@ -1,0 +1,12 @@
+.products {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 50px 30px;
+  padding: 30px;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #1110108f;
+}

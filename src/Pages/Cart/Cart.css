@@ -1,0 +1,149 @@
+.cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.cart_items {
+  width: 100%;
+  height: calc(100% - 150px);
+  list-style: none;
+  flex: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.cart_items > li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.cart_items > :first-child {
+  background: #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.cart_items > li * {
+  font-size: 18px;
+}
+
+.cart_items > li :where(h1, h2, h3) {
+  width: calc(100% / 3);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.cart_items > li :where(h2, h3) {
+  text-align: center;
+}
+
+.cart__item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: red;
+  }
+}
+
+.cart__item > * {
+  font-size: 16px !important;
+}
+
+.cart__item > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart__item > div > button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+}
+
+.cart__item > div > p {
+  width: 30px;
+  text-align: center;
+}
+
+.cart__item :where(p, div, span) {
+  width: calc(100% / 3);
+}
+
+.cart__item > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart__item > span {
+  text-align: center;
+}
+
+.cart__item > :last-child {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.cart_action {
+  width: 100%;
+  height: 150px;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart_action > h1 {
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  font-size: 24px;
+  flex: 1;
+}
+
+.cart_action > button {
+  width: 100%;
+  height: 75px;
+  border: none;
+  font-size: 40px;
+  background: rgb(19, 219, 19);
+  color: #fff;
+  cursor: pointer;
+}
+
+.cart > figure {
+  width: 100%;
+  height: calc(100% - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart > figure img {
+  width: 50%;
+}
