@@ -1,0 +1,14 @@
+1. ReactJS o'rnatish
+2. npx create-react-app my-app
+3. Dasturni ishchi xolatiga kelib o'tish
+4. Kerakli papkalarni yaratib olish
+5. Assets, Components, Pages, Context
+6. react-router-dom o'rnatish
+7. routes, route
+8. Redux toolkit o'rnatish
+9. configureStore, combineReducers,
+10. store, reducer, action
+11. react-redux o'rnatish
+12. Provider, useSelector, useDispatch
+13. react-icons o'rnatish
+14. useState, useEffect
